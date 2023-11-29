@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="default.css">
+        <style>
+            .flex-container{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                border: 10px solid red;
+            }
+            .flex-item {
+                flex: 1 auto;
+            }
+            @media (min-width: 600px) {
+                .flex-container{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                .flex-item {
+                    width: 50%;
+                    flex-basis: auto;
+                }
+            }
+            @media (min-width: 900px) {
+                .flex-item {
+                    width: 33.33333%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">AAAAAAAAAAA</div>
+            <div class="flex-item">BB</div>
+            <div class="flex-item">CCCCCCC</div>
+            <div class="flex-item">AAAAAAAAAAA</div>
+            <div class="flex-item">BB</div>
+            <div class="flex-item">CCCCCCC</div>
+            <div class="flex-item">AAAAAAAAAAA</div>
+            <div class="flex-item">BB</div>
+            <div class="flex-item">CCCCCCC</div>
+        </div>
+    </body>
+</html>
