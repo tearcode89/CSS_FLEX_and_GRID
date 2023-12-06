@@ -3,11 +3,13 @@
     display: flex;
 }
 .menu-item {
+    /* flex-grow: 1; */
     width: 25%;
     background: gold;
     transition: 0.5s;
 }
 .menu-item:hover {
+    /* flex-grow: 1.5; */
     width: 35%;
     background: crimson;
 }
@@ -23,12 +25,15 @@
 .menu-link:hover{
     color: white
 }
+
+/* search */
 .search-form {
     display: flex;
     height: 40px;
 }
 .search-form input[type='search'] {
     flex: 1;
+    min-width: 0;
     margin-right: 10px;
     border: 0;
     border-radius: 0.3em;
@@ -41,6 +46,11 @@
     background: gold;
     font-size: 1rem;
 }
+
+/*bullet list*/
+.info-list {
+    margin-bottom: 2rem;
+}
 .info-list-item {
     display: flex;
     margin: 0.5em 0;
@@ -48,6 +58,11 @@
 .info-list-item:before {
     content: '';
     margin-right: 0.5em;
+}
+
+/* message */
+.user-list {
+    margin-bottom: 2rem;
 }
 .user-item {
     display: flex;
@@ -65,6 +80,8 @@
     background-position: center;
     background-size: 150%;
 }
+
+/* friend list */
 .friend-item{
     align-items: center;
 }
@@ -73,6 +90,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+/* modal */
 .modal {
     display: flex;
     justify-content: center;
@@ -90,6 +109,8 @@
     border-radius: 1em;
     background: white;
 }
+
+/* card list */
 .card-item {
     display: flex;
     flex-direction: column;
