@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Grid 핵심정리 #7 - 영역 이름 사용하기</title>
+        <link rel="stylesheet" href="default.css">
+        <style>
+            .grid-container{
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-areas:
+                    'header header header'
+                    'sidebar-a main sidebar-b'
+                    'footer footer footer'
+            }
+            .header { grid-area: header  ; }
+            .sidebar-a { grid-area: sidebar-b; }
+            .sidebar-b { grid-area: sidebar-a; }
+            .main { grid-area: main; }
+            .footer { grid-area: footer; }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header grid-item">Header</div>
+            <div class="sidebar-a grid-item">Sidebar A</div>
+            <div class="sidebar-b grid-item">Sidebar B</div>
+            <div class="main grid-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet incidunt natus obcaecati quasi qui, voluptatem. Error in soluta voluptas voluptates. Aut delectus, id optio pariatur placeat quasi recusandae repudiandae vel. Architecto beatae consequuntur ducimus eos fugit pariatur quasi sapiente!</div>
+            <div class="footer grid-item">Footer</div>
+        </div>
+
+
+    </body>
+</html>
